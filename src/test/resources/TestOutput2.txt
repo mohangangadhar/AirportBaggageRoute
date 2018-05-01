@@ -1,0 +1,10 @@
+No Section Selected /Invalid section entered [# Section: test System] to process Data;
+No Section Selected  to process Data[test data];
+Invalid inputs For Conveyor System ;  Only 3 values; [A5]  of [String, String, int] are accepted;
+Invalid inputs For Conveyor System ;  Only 3 values; [A2, A3]  of [String, String, int] are accepted;
+Invalid inputs For Conveyor System ;  Departure and Arrival gates [A8] cannot be same;
+Invalid int value [InvalidInt]
+FlightId[UA10] already Exists; Cannot insert data for  Departures ; [UA10, A2, MIA, 08:00]
+Invalid inputs for Departures ; Only 4 values; [UA18, A5, 10:15] of [String, String, String, hh:mm] are accepted;
+Invalid inputs; for Bags Section ;Arrival gate & Departure flight gate [A4] cannot be same;
+Invalid inputs; for Bags Section only 3 string values are accepted;[0004, A8]
