@@ -1,7 +1,5 @@
 package com.airport.baggage;
 
-
-import com.airport.baggage.service.BaggageService;
 import com.airport.baggage.service.BaggageServiceImpl;
 
 import java.util.Scanner;
@@ -9,17 +7,15 @@ import java.util.logging.Level;
 
 public class BaggageRoute {
 
-    public static void main(String [] args){
-        Scanner input = new Scanner(System.in);
+    public static void main(String[] args) {
+
+        BaggageServiceImpl baggageService = new BaggageServiceImpl(Level.OFF);
+        Scanner input = null;
         String inputString = null;
-        BaggageService baggageService = new BaggageServiceImpl(Level.OFF);
-
-        // Read Input
-        while(!(inputString = input.nextLine().trim()).isEmpty()){
+        input = new Scanner(System.in);
+        while (!(inputString = input.nextLine().trim()).isEmpty())
             baggageService.insertSystemData(inputString);
-        }
 
-        //find the baggage route
         System.out.println(baggageService.findBaggageRoute());
         input.close();
 
