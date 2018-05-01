@@ -19,6 +19,7 @@ public class BaggageRoute {
             baggageService.insertSystemData(inputString);
         }
 
+        //find the baggage route
         System.out.println(baggageService.findBaggageRoute());
         input.close();
 
